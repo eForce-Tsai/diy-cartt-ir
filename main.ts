@@ -33,6 +33,14 @@ eForce_IR.onPressEvent(RemoteButton.Num3, function () {
     basic.pause(100)
     motor.MotorRun(motor.Motors.M3, motor.Dir.CW, 500)
 })
+eForce_IR.onPressEvent(RemoteButton.UP, function () {
+    motor.motorStopAll()
+    basic.pause(100)
+    motor.MotorRun(motor.Motors.M1, motor.Dir.CW, 500)
+    motor.MotorRun(motor.Motors.M2, motor.Dir.CW, 500)
+    motor.MotorRun(motor.Motors.M3, motor.Dir.CW, 500)
+    motor.MotorRun(motor.Motors.M4, motor.Dir.CW, 500)
+})
 eForce_IR.onPressEvent(RemoteButton.NUM6, function () {
     motor.motorStopAll()
     basic.pause(100)
